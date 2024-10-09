@@ -1,50 +1,29 @@
-/* styles.css */
-
-/* Flexbox for the button container */
+/* Style for the parent container */
 .vfrc-system-response--actions {
-    display: flex; /* Enable flexbox */
-    flex-direction: column; /* Stack children vertically */
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the start (left) */
+    padding: 10px; /* Optional: add padding for visual spacing */
 }
 
-/* Styles for the first and second buttons */
-.vfrc-system-response--actions .vfrc-button {
-    margin-right: 10px; /* Space between first and second buttons */
+/* Styles for all buttons */
+.vfrc-button {
+    margin: 4px 0; /* Space between buttons vertically */
+    font-size: 16px; /* Default font size */
 }
 
-.vfrc-system-response--actions .vfrc-button:nth-of-type(1),
-.vfrc-system-response--actions .vfrc-button:nth-of-type(2) {
-    flex: 1; /* Allow buttons to grow and fill available space */
+/* Specific styles for the third button (link-style) */
+.vfrc-button:nth-child(3) {
+    padding: 0; /* Remove padding for link style */
+    color: #003180; /* Text color for the link */
+    border: none; /* No border */
+    background-color: transparent; /* No background color */
+    text-decoration: underline; /* Underlined text to signify a link */
+    font-weight: bold; /* Optional: make the text bold */
+    transition: color 0.3s; /* Smooth color transition */
 }
 
-/* Styles for the first button */
-.vfrc-system-response--actions .vfrc-button:nth-of-type(1) {
-    background-color: green; /* Background color for Button 1 */
-    color: white; /* Text color */
-    padding: 10px 20px; /* Padding */
-    border: none; /* Remove border */
-    border-radius: 5px; /* Rounded corners */
-}
-
-/* Styles for the second button */
-.vfrc-system-response--actions .vfrc-button:nth-of-type(2) {
-    background-color: blue; /* Background color for Button 2 */
-    color: white; /* Text color */
-    padding: 10px 20px; /* Padding */
-    border: none; /* Remove border */
-    border-radius: 5px; /* Rounded corners */
-}
-
-/* Styles for the third button */
-.vfrc-system-response--actions .vfrc-button:nth-of-type(3) {
-    background-color: red; /* Background color for Button 3 */
-    color: white; /* Text color */
-    padding: 10px 20px; /* Padding */
-    border: none; /* Remove border */
-    border-radius: 5px; /* Rounded corners */
-}
-
-/* Ensure the third button takes the full width */
-.vfrc-system-response--actions .vfrc-button:nth-of-type(3) {
-    width: 100%; /* Full width for the third button */
-    margin-top: 10px; /* Space above the third button */
+/* Hover effect for the third button (link style) */
+.vfrc-button:nth-child(3):hover {
+    color: #0056b3; /* Change text color on hover */
 }

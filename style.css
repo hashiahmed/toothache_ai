@@ -2,20 +2,20 @@
 .button-container {
     display: flex; /* Use flexbox for layout */
     align-items: center; /* Center buttons vertically */
-    justify-content: flex-start; /* Start from the left */
     padding: 20px; /* Add padding around the container */
 }
 
 /* Base styles for the button */
 .vfrc-button {
     background-color: transparent; /* Transparent background */
-    color: #00bcd4; /* Light teal text color */
-    border: 2px solid #00bcd4; /* Light teal border */
+    color: #00bcd4; /* Default light teal text color */
+    border: 2px solid #00bcd4; /* Default light teal border */
     padding: 12px 24px; /* Padding for the button */
     text-align: center; /* Center the text */
     text-decoration: none; /* Remove underline */
     display: inline-flex; /* Use flexbox for alignment */
     align-items: center; /* Center items vertically */
+    justify-content: center; /* Center text horizontally */
     font-size: 16px; /* Font size */
     border-radius: 25px; /* Rounded corners */
     transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
@@ -28,13 +28,35 @@
     margin-right: 8px; /* Space between icon and text */
 }
 
-/* Align the second and third buttons to the right */
-.vfrc-button:nth-child(n+2) {
-    margin-left: auto; /* Push these buttons to the right */
+/* Change theme color for the second button (green) */
+.vfrc-button:nth-child(2) {
+    color: white; /* White text color for better contrast */
+    background-color: green; /* Green background */
+    border: 2px solid green; /* Green border */
 }
 
-/* Hover effect */
+/* Change theme color for the third button (red) */
+.vfrc-button:nth-child(3) {
+    color: white; /* White text color for better contrast */
+    background-color: red; /* Red background */
+    border: 2px solid red; /* Red border */
+}
+
+/* Adjust space between buttons */
+.vfrc-button:nth-child(n+2) {
+    margin-left: 8px; /* Space between buttons */
+}
+
+/* Hover effects */
 .vfrc-button:hover {
-    background-color: #00bcd4; /* Light teal background on hover */
-    color: white; /* Change text color to white on hover */
+    opacity: 0.8; /* Slightly reduce opacity on hover */
+}
+
+/* Specific hover effects for the second and third buttons */
+.vfrc-button:nth-child(2):hover {
+    background-color: darkgreen; /* Darker green on hover */
+}
+
+.vfrc-button:nth-child(3):hover {
+    background-color: darkred; /* Darker red on hover */
 }

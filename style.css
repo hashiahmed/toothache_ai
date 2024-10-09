@@ -16,14 +16,13 @@
 /* Style for the parent container */
 .vfrc-system-response--actions {
     display: flex; /* Use flexbox layout */
-    justify-content: flex-start; /* Align items to the start (left) */
+    justify-content: flex-end; /* Align items to the end (right) */
     padding: 10px; /* Optional: add padding for visual spacing */
 }
 
 /* Specific style for the third button */
 .vfrc-system-response--actions .vfrc-button:nth-child(3) {
     margin-left: 0; /* Remove any left margin */
-    order: -1; /* Optional: ensure this button appears first in the order */
     /* Additional styling can go here if needed */
 }
 

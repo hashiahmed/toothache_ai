@@ -1,5 +1,17 @@
 <script type="text/javascript">
     (function() {
+      // Function to change button colors
+      function styleButtons() {
+        const buttons = document.querySelectorAll('.vfrc-button');
+        buttons.forEach(button => {
+          if (button.textContent.trim() === 'Yes') {
+            button.style.backgroundColor = 'red';
+          } else if (button.textContent.trim() === 'No') {
+            button.style.backgroundColor = 'green';
+          }
+        });
+      }
+
       // Check if the screen width is greater than 600px
       if (window.innerWidth > 600) {
         // Run A1-code
@@ -19,6 +31,9 @@
                 },
                 autostart: true // Autostart is now true
               });
+
+              // Call the button styling function after loading
+              styleButtons();
             }
             v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; 
             v.type = "text/javascript"; 
@@ -42,12 +57,15 @@
                 },
                 autostart: true // Autostart is now true
               });
+
+              // Call the button styling function after loading
+              styleButtons();
             }
             v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; 
             v.type = "text/javascript"; 
             s.parentNode.insertBefore(v, s);
         })(document, 'script');
-  
+
         // Prevent focus zoom on input fields
         document.querySelectorAll('input, textarea').forEach(function(input) {
           input.addEventListener('focus', function() {

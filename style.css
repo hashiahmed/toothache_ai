@@ -1,29 +1,34 @@
 
-/* styles.css */
+*.vfrc-button:nth-child(1) {
 
-/* Styles for the first button */
-.vfrc-system-response--actions .vfrc-button:nth-of-type(1) {
-    background-color: green; /* Background color for Button 1 */
-    color: white; /* Text color */
-    padding: 10px 20px; /* Padding */
-    border: none; /* Remove border */
-    border-radius: 5px; /* Rounded corners */
 }
 
-/* Styles for the second button */
-.vfrc-system-response--actions .vfrc-button:nth-of-type(2) {
-    background-color: blue; /* Background color for Button 2 */
-    color: white; /* Text color */
-    padding: 10px 20px; /* Padding */
-    border: none; /* Remove border */
-    border-radius: 5px; /* Rounded corners */
+.vfrc-button:nth-child(2) {
+
 }
 
-/* Styles for the third button */
-.vfrc-system-response--actions .vfrc-button:nth-of-type(3) {
-    background-color: red; /* Background color for Button 3 */
-    color: white; /* Text color */
-    padding: 10px 20px; /* Padding */
-    border: none; /* Remove border */
-    border-radius: 5px; /* Rounded corners */
+
+.vfrc-button:nth-child(3) {
+    color: white; /* White text color for better contrast */
+    background-color: green; /* Green background */
+    border: 2px solid green; /* Green border */
+}
+
+/* Style for the parent container */
+.vfrc-system-response--actions {
+    display: flex; /* Use flexbox layout */
+    justify-content: space-between; /* Space between the first two buttons and the last button */
+    align-items: center; /* Center buttons vertically */
+    padding: 10px; /* Optional: add padding for visual spacing */
+}
+
+/* Style for the first and second buttons */
+.vfrc-button:nth-child(1),
+.vfrc-button:nth-child(2) {
+    margin-right: 8px; /* Space between the first and second button */
+}
+
+/* Specific style for the third button */
+.vfrc-system-response--actions .vfrc-button:nth-child(3) {
+    margin-left: auto; /* Push this button to the far right */
 }

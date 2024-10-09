@@ -16,17 +16,18 @@
 /* Style for the parent container */
 .vfrc-system-response--actions {
     display: flex; /* Use flexbox layout */
-    justify-content: flex-end; /* Align items to the end (right) */
+    justify-content: space-between; /* Space between the first two buttons and the last button */
+    align-items: center; /* Center buttons vertically */
     padding: 10px; /* Optional: add padding for visual spacing */
+}
+
+/* Style for the first and second buttons */
+.vfrc-button:nth-child(1),
+.vfrc-button:nth-child(2) {
+    margin-right: 8px; /* Space between the first and second button */
 }
 
 /* Specific style for the third button */
 .vfrc-system-response--actions .vfrc-button:nth-child(3) {
-    margin-left: 0; /* Remove any left margin */
-    /* Additional styling can go here if needed */
-}
-
-/* Optional: Ensure other buttons maintain their styles */
-.vfrc-button {
-    margin-left: 8px; /* Maintain space between buttons if necessary */
+    margin-left: auto; /* Push this button to the far right */
 }

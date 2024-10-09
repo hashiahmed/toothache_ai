@@ -1,3 +1,12 @@
+/* Container for the buttons */
+.button-container {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center buttons vertically */
+    justify-content: flex-start; /* Start from the left */
+    padding: 20px; /* Add padding around the container */
+}
+
+/* Base styles for the button */
 .vfrc-button {
     background-color: transparent; /* Transparent background */
     color: #00bcd4; /* Light teal text color */
@@ -13,13 +22,19 @@
     cursor: pointer; /* Pointer cursor on hover */
 }
 
-/* Add an icon before the text */
+/* Remove the arrow icon */
 .vfrc-button::before {
-    content: "←"; /* Left arrow icon */
+    content: ""; /* Remove the left arrow icon */
     margin-right: 8px; /* Space between icon and text */
+}
+
+/* Align the second and third buttons to the right */
+.vfrc-button:nth-child(n+2) {
+    margin-left: auto; /* Push these buttons to the right */
 }
 
 /* Hover effect */
 .vfrc-button:hover {
     background-color: #00bcd4; /* Light teal background on hover */
     color: white; /* Change text color to white on hover */
+}

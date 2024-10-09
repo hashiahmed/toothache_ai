@@ -21,6 +21,8 @@
     text-decoration: underline; /* Underlined text to signify a link */
     font-weight: bold; /* Optional: make the text bold */
     transition: color 0.3s; /* Smooth color transition */
+    position: fixed;
+    right: 0;
 }
 
 /* Hover effect for the third button (link style) */

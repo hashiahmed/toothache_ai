@@ -1,25 +1,33 @@
-.vfrc-system-response--actions .vfrc-button:nth-of-type(1) {
-    background-color: green; /* Button 1 color */
-    color: white; /* Text color */
-    padding: 10px 20px; /* Padding */
-    border: none; /* Remove border */
+.vfrc-button {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none; /* Remove borders */
+    padding: 15px 20px; /* Add some padding */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Make the button inline */
+    font-size: 16px; /* Increase font size */
+    margin: 4px 2px; /* Add some margin */
+    transition-duration: 0.4s; /* Transition effects */
+    cursor: pointer; /* Pointer cursor on hover */
     border-radius: 5px; /* Rounded corners */
 }
 
-/* Styles for the second button (index 1) */
-.vfrc-system-response--actions .vfrc-button:nth-of-type(2) {
-    background-color: blue; /* Button 2 color */
-    color: white; /* Text color */
-    padding: 10px 20px; /* Padding */
-    border: none; /* Remove border */
-    border-radius: 5px; /* Rounded corners */
+/* Hover effect */
+.vfrc-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+    color: white; /* Keep text color white */
 }
 
-/* Styles for the third button (index 2) */
-.vfrc-system-response--actions .vfrc-button:nth-of-type(3) {
-    background-color: red; /* Button 3 color */
-    color: white; /* Text color */
-    padding: 10px 20px; /* Padding */
-    border: none; /* Remove border */
-    border-radius: 5px; /* Rounded corners */
+/* Focus effect */
+.vfrc-button:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 5px #4CAF50; /* Green glow */
+}
+
+/* Active effect */
+.vfrc-button:active {
+    background-color: #3e8e41; /* Even darker green on click */
+    box-shadow: 0 5px #666; /* Shadow effect */
+    transform: translateY(4px); /* Move button down */
 }

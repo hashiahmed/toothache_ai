@@ -1,7 +1,7 @@
 /* Style for the parent container */
 .vfrc-system-response--actions {
     display: flex; /* Use flexbox layout */
-    flex-direction: row; /* Stack items vertically */
+    flex-direction: row; /* Stack items horizontaly */
     align-items: flex-start; /* Align items to the start (left) */
     padding: 10px; /* Optional: add padding for visual spacing */
 }

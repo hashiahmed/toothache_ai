@@ -1,5 +1,5 @@
 /* Style for buttons with Yes text */
-.btn-yes {
+.vfrc-button.btn-yes {
     background-color: green; /* Set background color to green */
     color: white; /* Text color */
     border: none; /* Remove default border */
@@ -10,7 +10,7 @@
 }
 
 /* Style for buttons with No text */
-.btn-no {
+.vfrc-button.btn-no {
     background-color: red; /* Set background color to red */
     color: white; /* Text color */
     border: none; /* Remove default border */
@@ -21,6 +21,6 @@
 }
 
 /* Optional: Add hover effects */
-.btn-yes:hover, .btn-no:hover {
+.vfrc-button.btn-yes:hover, .vfrc-button.btn-no:hover {
     opacity: 0.8; /* Slightly fade on hover */
 }

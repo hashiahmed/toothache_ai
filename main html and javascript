@@ -1,0 +1,59 @@
+<script type="text/javascript">
+    (function() {
+      // Check if the screen width is greater than 600px
+      if (window.innerWidth > 600) {
+        // Run A1-code
+        (function(d, t) {
+            var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+            v.onload = function() {
+              window.voiceflow.chat.load({
+                verify: { projectID: '66dada858b24990f9a67dd2e' },
+                url: 'https://general-runtime.voiceflow.com',
+                versionID: 'production',
+                assistant: {
+                  stylesheet: "https://hashiahmed.github.io/toothache_ai/style.css" // Updated stylesheet link
+                },
+                render: {
+                  mode: 'embedded',
+                  target: document.getElementById('block-yui_3_17_2_1_1727940873640_28290'),
+                },
+                autostart: true // Autostart is now true
+              });
+            }
+            v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; 
+            v.type = "text/javascript"; 
+            s.parentNode.insertBefore(v, s);
+        })(document, 'script');
+      } else {
+        // Run A2-code
+        (function(d, t) {
+            var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+            v.onload = function() {
+              window.voiceflow.chat.load({
+                verify: { projectID: '66dada858b24990f9a67dd2e' },
+                url: 'https://general-runtime.voiceflow.com',
+                versionID: 'production',
+                assistant: {
+                  stylesheet: "https://hashiahmed.github.io/toothache_ai/style.css" // Updated stylesheet link
+                },
+                render: {
+                  mode: 'embedded',
+                  target: document.body,
+                },
+                autostart: true // Autostart is now true
+              });
+            }
+            v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; 
+            v.type = "text/javascript"; 
+            s.parentNode.insertBefore(v, s);
+        })(document, 'script');
+  
+        // Prevent focus zoom on input fields
+        document.querySelectorAll('input, textarea').forEach(function(input) {
+          input.addEventListener('focus', function() {
+            document.body.style.zoom = '1'; // Prevent zoom
+          });
+        });
+      }
+    })();
+</script>

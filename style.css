@@ -1,30 +1,28 @@
 /* Style for the parent container */
 .vfrc-system-response--actions {
     display: flex; /* Use flexbox layout */
-    justify-content: space-between; /* Space between the first two buttons and the last button */
-    align-items: center; /* Center buttons vertically */
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the start (left) */
     padding: 10px; /* Optional: add padding for visual spacing */
 }
 
 /* Styles for all buttons */
 .vfrc-button {
-    margin-right: 8px; /* Space between buttons */
+    margin: 4px 0; /* Space between buttons vertically */
 }
 
-/* Specific styles for the third button */
+/* Specific styles for the link-style third button */
 .vfrc-button:nth-child(3) {
-    margin-left: auto; /* Push this button to the far right */
     padding: 8px 16px; /* Smaller button padding */
     font-size: 14px; /* Smaller font size */
     color: gray; /* Gray text color */
-    border: 2px solid white; /* White border */
-    border-radius: 20px; /* Rounded corners */
-    background-color: green; /* Green background */
-    transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
+    border: none; /* No border for link style */
+    background-color: transparent; /* Transparent background */
+    text-decoration: underline; /* Underlined text to signify a link */
+    transition: color 0.3s; /* Smooth color transition */
 }
 
-/* Hover effect for the third button */
+/* Hover effect for the third button (link style) */
 .vfrc-button:nth-child(3):hover {
-    background-color: #003180; /* Change background color on hover */
-    color: white; /* Change text color to white on hover */
+    color: #003180; /* Change text color on hover */
 }

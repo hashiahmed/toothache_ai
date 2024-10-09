@@ -1,3 +1,5 @@
+css
+Kopioi koodi
 /* Style for the parent container */
 .vfrc-system-response--actions {
     display: flex; /* Use flexbox layout */
@@ -9,20 +11,20 @@
 /* Styles for all buttons */
 .vfrc-button {
     margin: 4px 0; /* Space between buttons vertically */
+    font-size: 16px; /* Default font size */
 }
 
-/* Specific styles for the link-style third button */
+/* Specific styles for the third button (link-style) */
 .vfrc-button:nth-child(3) {
-    padding: 8px 16px; /* Smaller button padding */
-    font-size: 14px; /* Smaller font size */
-    color: gray; /* Gray text color */
-    border: none; /* No border for link style */
-    background-color: transparent; /* Transparent background */
+    padding: 0; /* Remove padding for link style */
+    color: #003180; /* Text color for the link */
+    border: none; /* No border */
+    background-color: transparent; /* No background color */
     text-decoration: underline; /* Underlined text to signify a link */
+    font-weight: bold; /* Optional: make the text bold */
     transition: color 0.3s; /* Smooth color transition */
 }
 
 /* Hover effect for the third button (link style) */
 .vfrc-button:nth-child(3):hover {
-    color: #003180; /* Change text color on hover */
-}
+    color: #0056b3; /* Change text color on hover */

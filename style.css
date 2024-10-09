@@ -1,5 +1,3 @@
-css
-Kopioi koodi
 /* Style for the parent container */
 .vfrc-system-response--actions {
     display: flex; /* Use flexbox layout */
@@ -8,9 +6,15 @@ Kopioi koodi
     padding: 10px; /* Optional: add padding for visual spacing */
 }
 
+/* Styles for the button container for the first two buttons */
+.button-group {
+    display: flex; /* Use flexbox layout */
+    margin-bottom: 8px; /* Space between button group and the third button */
+}
+
 /* Styles for all buttons */
 .vfrc-button {
-    margin: 4px 0; /* Space between buttons vertically */
+    margin-right: 8px; /* Space between buttons */
     font-size: 16px; /* Default font size */
 }
 
@@ -28,3 +32,4 @@ Kopioi koodi
 /* Hover effect for the third button (link style) */
 .vfrc-button:nth-child(3):hover {
     color: #0056b3; /* Change text color on hover */
+}

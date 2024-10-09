@@ -1,34 +1,29 @@
-
-*.vfrc-button:nth-child(1) {
-
-}
-
-.vfrc-button:nth-child(2) {
-
-}
-
-
-.vfrc-button:nth-child(3) {
-    color: white; /* White text color for better contrast */
-    background-color: green; /* Green background */
-    border: 2px solid green; /* Green border */
-}
-
 /* Style for the parent container */
 .vfrc-system-response--actions {
     display: flex; /* Use flexbox layout */
-    justify-content: space-between; /* Space between the first two buttons and the last button */
-    align-items: center; /* Center buttons vertically */
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the start (left) */
     padding: 10px; /* Optional: add padding for visual spacing */
 }
 
-/* Style for the first and second buttons */
-.vfrc-button:nth-child(1),
-.vfrc-button:nth-child(2) {
-    margin-right: 8px; /* Space between the first and second button */
+/* Styles for all buttons */
+.vfrc-button {
+    margin: 4px 0; /* Space between buttons vertically */
+    font-size: 16px; /* Default font size */
 }
 
-/* Specific style for the third button */
-.vfrc-system-response--actions .vfrc-button:nth-child(3) {
-    margin-left: auto; /* Push this button to the far right */
+/* Specific styles for the third button (link-style) */
+.vfrc-button:nth-child(3) {
+    padding: 0; /* Remove padding for link style */
+    color: #003180; /* Text color for the link */
+    border: none; /* No border */
+    background-color: transparent; /* No background color */
+    text-decoration: underline; /* Underlined text to signify a link */
+    font-weight: bold; /* Optional: make the text bold */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+/* Hover effect for the third button (link style) */
+.vfrc-button:nth-child(3):hover {
+    color: #0056b3; /* Change text color on hover */
 }

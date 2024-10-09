@@ -1,6 +1,14 @@
-.c-dzcdPv.vfrc-button,
-.c-jjMiVY.vfrc-button--secondary,
-.c-kCDKCe.vfrc-button {
-   background-color: red !important; /* Change background color to red */
-   color: white !important; /* Change text color to white for contrast */
-   border: none !important; /* Remove borders if necessary */
+.vfrc-button {
+    color: white; /* Optional: Text color */
+    border: none; /* Optional: Remove border */
+    padding: 10px; /* Optional: Add padding */
+    font-size: 16px; /* Optional: Font size */
+}
+
+.vfrc-button.yes {
+    background-color: red; /* Yes button color */
+}
+
+.vfrc-button.no {
+    background-color: green; /* No button color */
+}

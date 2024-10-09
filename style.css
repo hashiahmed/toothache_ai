@@ -1,13 +1,9 @@
 .vfrc-button:nth-child(1) {
-    color: white; /* White text color for better contrast */
-    background-color: green; /* Green background */
-    border: 2px solid green; /* Green border */
+
 }
 
 .vfrc-button:nth-child(2) {
-    color: white; /* White text color for better contrast */
-    background-color: green; /* Green background */
-    border: 2px solid green; /* Green border */
+
 }
 
 
@@ -15,4 +11,23 @@
     color: white; /* White text color for better contrast */
     background-color: green; /* Green background */
     border: 2px solid green; /* Green border */
+}
+
+/* Style for the parent container */
+.vfrc-system-response--actions {
+    display: flex; /* Use flexbox layout */
+    justify-content: flex-start; /* Align items to the start (left) */
+    padding: 10px; /* Optional: add padding for visual spacing */
+}
+
+/* Specific style for the third button */
+.vfrc-system-response--actions .vfrc-button:nth-child(3) {
+    margin-left: 0; /* Remove any left margin */
+    order: -1; /* Optional: ensure this button appears first in the order */
+    /* Additional styling can go here if needed */
+}
+
+/* Optional: Ensure other buttons maintain their styles */
+.vfrc-button {
+    margin-left: 8px; /* Maintain space between buttons if necessary */
 }

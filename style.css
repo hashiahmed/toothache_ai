@@ -1,29 +1,29 @@
-/* Style for the parent container */
-.vfrc-system-response--actions {
-    display: flex; /* Use flexbox layout */
-    flex-direction: column; /* Stack items vertically */
-    align-items: flex-start; /* Align items to the start (left) */
-    padding: 10px; /* Optional: add padding for visual spacing */
+
+/* styles.css */
+
+/* Styles for the first button */
+.vfrc-system-response--actions .vfrc-button:nth-of-type(1) {
+    background-color: green; /* Background color for Button 1 */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Padding */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
 }
 
-/* Styles for all buttons */
-.vfrc-button {
-    margin: 4px 0; /* Space between buttons vertically */
-    font-size: 16px; /* Default font size */
+/* Styles for the second button */
+.vfrc-system-response--actions .vfrc-button:nth-of-type(2) {
+    background-color: blue; /* Background color for Button 2 */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Padding */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
 }
 
-/* Specific styles for the third button (link-style) */
-.vfrc-button:nth-child(3) {
-    padding: 0; /* Remove padding for link style */
-    color: #003180; /* Text color for the link */
-    border: none; /* No border */
-    background-color: transparent; /* No background color */
-    text-decoration: underline; /* Underlined text to signify a link */
-    font-weight: bold; /* Optional: make the text bold */
-    transition: color 0.3s; /* Smooth color transition */
-}
-
-/* Hover effect for the third button (link style) */
-.vfrc-button:nth-child(3):hover {
-    color: #0056b3; /* Change text color on hover */
+/* Styles for the third button */
+.vfrc-system-response--actions .vfrc-button:nth-of-type(3) {
+    background-color: red; /* Background color for Button 3 */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Padding */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
 }

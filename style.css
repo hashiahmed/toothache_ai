@@ -1,4 +1,9 @@
 /* Style for the parent container */
+
+.button_yes {
+    background-color: red;  /* Sets the background color to red */
+    color: white;           /* Sets the text color to white for contrast */
+
 .vfrc-system-response--actions {
     display: flex; /* Use flexbox layout */
     flex-direction: row; /* Stack items horizontaly */

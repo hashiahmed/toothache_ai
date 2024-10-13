@@ -11,10 +11,10 @@
     font-size: 16px; /* Default font size */
 }
 
-.vfrc-card--content c-kEvnuF {
-    padding: 0;
+.vfrc-card--content .c-kEvnuF {
+    padding: 0; /* Corrected selector with a space before the class */
 }
 
-.c-dzcdPv vfrc-button c-jjMiVY vfrc-button--primary c-bXTvXv c-bXTvXv-lckiv-type-info {
-    margin: 0:
+.c-dzcdPv .vfrc-button .c-jjMiVY .vfrc-button--primary .c-bXTvXv .c-bXTvXv-lckiv-type-info {
+    margin: 0; /* Corrected the colon (:) to a semicolon (;) */
 }

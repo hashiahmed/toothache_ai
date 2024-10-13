@@ -11,25 +11,10 @@
     font-size: 16px; /* Default font size */
 }
 
-/* Specific styles for the third button (link-style) */
-.vfrc-button:nth-child(3) {
-    padding: 0; /* Remove padding for link style */
-    color: #003180; /* Text color for the link */
-    border: none; /* No border */
-    background-color: transparent; /* No background color */
-    text-decoration: underline; /* Underlined text to signify a link */
-    font-weight: bold; /* Optional: make the text bold */
-    transition: color 0.3s; /* Smooth color transition */
-    position: fixed;
-    right: 0;
+.vfrc-card--content c-kEvnuF {
+    padding: 0;
 }
 
-/* Hover effect for the third button (link style) */
-.vfrc-button:nth-child(3):hover {
-    color: #0056b3; /* Change text color on hover */
-}
-
-.c-jUajGf:nth-child(3) {
-    color: red; /* Changes text color to red */
-    background-color: red; /* Changes background color to red */
+.c-dzcdPv vfrc-button c-jjMiVY vfrc-button--primary c-bXTvXv c-bXTvXv-lckiv-type-info {
+    margin: 0:
 }
